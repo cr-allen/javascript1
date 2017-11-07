@@ -212,13 +212,16 @@
 // isMember ? price == 2 : price == 6;
 
 
-var birthday = prompt('how old are you?', 92);
+var birthday = prompt('how old are you?', 12/08/1975);
   var birthday = new Date(birthday);
-  birthday.setDate( date.getDate() - 18 );
-  birthday.setFullYear( date.getFullYear() - 1 );
-  $("#searchDateFrom").val((birthday.getMonth() ) + '/' + (birthday.getDate()) + '/' + (birthday.getFullYear()))
+  birthday.setFullYear( birthday.getFullYear() - 18 );
+  $("#searchDateFrom").val((birthday.getFullYear()))
 
-d
+if (birthday >=18) {
+  confirm("congrats! you're an adult. do you like Star Trek?")
+} else {
+
+}
 
 
 
